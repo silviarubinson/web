@@ -125,7 +125,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 .menu-link-2:hover, .menu-link-2--is-active {
   font-weight: bold;
-  padding-left: var(--s2);
 }
 
 .text-slider__slide {
