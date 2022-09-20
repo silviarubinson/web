@@ -56,7 +56,7 @@ class EqualHeightRows {
                 for(let child of children){
                     if( isFirstItem ) { isFirstItem = false ; continue }
                     child.style.paddingLeft = this.spacing ? this.spacing : '20px';
-                    child.style.width = '100%';
+                    // child.style.width = '100%';
                 }
             }
             else {

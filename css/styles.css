@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Helvetica Neue";
   src: url("../fonts/HelveticaNeueLTStd-Th.otf");
@@ -17,7 +18,7 @@ html {
   --font-display: "Olivetti";
   --font-size-large: 2em;
   --font-size-medium-large: 1.5em;
-  --font-size-small: 0.75rem;
+  --font-size-small: 0.75em;
   --color-black: #333;
   --color-medium-gray: #777;
   --color-light-gray: #aaa;
@@ -480,10 +481,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .u-font-size-small {
-  font-size: 0.75rem !important;
+  font-size: 0.75em !important;
   font-size: var(--font-size-small) !important;
+  font-size: 0.75em !important;
 }
-
 .cft-post-arrow {
   position: fixed;
   height: 70px;
@@ -520,4 +521,15 @@ h1, h2, h3, h4, h5, h6 {
   .cft-textos-item {
     width: 100%;
   }
+}
+
+/*  ESTO ESTÁ MAL, pero lo hago para testear.
+ *  Necesitaría aplicar una clase a _todas_ las imágenes
+ *  de todas las galerías, y esto me permite testear antes
+ *  de romper todo el DOM */
+.js-equal-height-row {
+  justify-content: space-around;
+}
+.js-equal-height-row img {
+  max-height: 90vh;
 }
